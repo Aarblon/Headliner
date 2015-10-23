@@ -45,7 +45,11 @@
       .state('landing', {
         templateUrl: 'app/auth/landing.html',
         url: '/',
-        controller: 'AuthController'
+        controller: function($scope){
+          $(document).ready(function(){
+            $('.parallax').parallax();
+          });
+        }
       })
       .state('auth-init', {
         templateUrl: 'app/auth-init/auth-init.html',

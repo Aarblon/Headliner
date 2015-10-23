@@ -12,7 +12,9 @@
     $scope.states = Global.states;
     $scope.allGenres = Global.allGenres;
     $scope.allTypes = Global.allTypes;
-
+    // $(document).ready(function(){
+    //   $('.parallax').parallax();
+    // });
     $scope.songs = [];
 
     $scope.song = {

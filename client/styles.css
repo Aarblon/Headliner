@@ -174,6 +174,43 @@ filter: none; /* IE6-9 */
   color: #fff;
   background-color: red;
 }
+/* Parallax for Landing */ 
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    width: auto;
+    color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+p {
+    line-height: 2rem;
+}
+
+body{
+    padding: 0px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+
 @media(max-width:768px){
   #login-dp{
       color: #fff;
@@ -221,15 +258,8 @@ body {
 }
 
 #title {
-  color: #677077;
-  left: 12%;
-  line-height: 200px;
-  margin: auto;
-  margin-top: -240px;
-  position: fixed;
-  top: 50%;
-  width: 100%;
-  font-size: 200%;
+    color: #3fb0ac;
+
 }
 
 .btn {
@@ -266,15 +296,15 @@ body {
 }
 
 #subtitle {
-  color: #677077;
-  left: 42%;
-  line-height: 200px;
-  margin: auto;
-  margin-top: 20px;
-  position: fixed;
-  top: 50%;
-  width: 100%;
-  font-size: 200%;
+    color: #677077;
+    left: 42%;
+    line-height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    position: auto;
+    top: 50%;
+    width: 100%;
+    font-size: 200%;
 }
 
 hr.style-four {
