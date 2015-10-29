@@ -71,9 +71,6 @@ See Headliner in action by visiting:
 - Node
 - Express
 
-### Database Structure
-***
--- fill this in 
 
 ## Development Team 
 ***
