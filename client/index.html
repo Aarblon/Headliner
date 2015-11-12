@@ -18,8 +18,7 @@
 
       <!-- NAVIGATION -->
       <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" ng-controller="AuthController">
-        <div class="nav-wrapper container-fluid">
-          <a id="logo-container" href="#/" class="ng-cloak poiret" ng-if="!loggedIn()" ng-cloak= align="left"><img src="https://slack-files.com/files-tmb/T02C9L2SS-F0CL1LBGQ-2f9176197c/rsz_headliner-icon_360.jpg" ></a>
+        <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -53,10 +52,10 @@
                   <li>
                     <div class="row">
                       <div class="col-md-12" class="logintext">
-                        <h6>Login with Facebook or Google</h6>
+                        <h6>Login with Google or Facebook</h6>
                         <div class="social-buttons">
-                          <a href="/auth/facebook" class="btn btn-fb"><i class="fa fa-facebook"></i></a>
-                          <a href="/auth/google" class="btn btn-goog"><i class="fa fa-google"></i></a>
+                          <a href="/auth/facebook" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                          <a href="/auth/google" class="btn btn-goog"><i class="fa fa-google"></i> Google</a>
                         </div>
                         <label class="sr-only" for="username">Email address</label>
                         <input type="email" class="form-control" id="username" placeholder="Email address" ng-model="user.localEmail"  required>

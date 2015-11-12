@@ -7,7 +7,7 @@
 
 
     <div class="row">
-
+    <!-- Start of the filters for finding venues -->
     <div class="col s3">
       <input type='text' ng-model='search.venue_name' placeholder='search by venue name' />
       <div class="row">
@@ -193,18 +193,14 @@
         </div>
       </div>
     </div>
-        <!-- 
-                                         
-      </div>
-
-      </div> -->
+    <!-- End of the filters -->
 
   
       <div class="col s8">
         <div ng-repeat="venue in venues | filter:search | filter:genreFilter | filter:typeFilter | filter:capacityFilter | filter:inoutFilter |filter:bookedFilter | filter:reviewsFilter | filter:dateFilter | filter:distanceFilter">
           <div class="card col s10 offset-s1">
             <div class="card-image waves-effect waves-block waves-light col s3">
-              <img class="activator profPic" src="http://i.imgur.com/ZNc1JZq.jpg">
+              <img class="activator profPic" ng-src="{{ venue.profile_pic || 'http://i.imgur.com/ZNc1JZq.jpg'}}">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">{{ venue.venue_name }}<i class="material-icons right">more_vert</i></span>
