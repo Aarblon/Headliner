@@ -18,12 +18,12 @@
     </div>
 
     <!-- drop down options depending on what venue selects as their communication preference -->
-    <div class="question row col s9" ng-show="communication === 'Phone'">
+    <div class="question row col s9" ng-if="communication === 'Phone'">
       <input name="phone" type="text" class="form-control input-sm chat-input" placeholder="Phone Number" ng-model="venue.contact_phone" required />
       <span ng-show="venueForm.phone.$dirty && venueForm.phone.$error.required" class="help-block">* required</span>
     </div>
     <br>
-    <div class="question row col s9" ng-show="communication === 'Email'">
+    <div class="question row col s9" ng-if="communication === 'Email'">
       <input name="email" type="email"  class="form-control input-sm chat-input" placeholder="Email" ng-model="venue.contact_email" required />
       <span ng-show="venueForm.email.$dirty && venueForm.email.$error.required" class="help-block">* required</span>
     </div>
