@@ -7,7 +7,7 @@
   <hr>
 
   <div class="row">
-
+  <!-- begin filters for artists -->
   <div class="col s3">
   <input type='text' ng-model='search.artist_name' placeholder='search by artist name' />
     <div class="row">
@@ -168,11 +168,13 @@
       </div>                               
     </div>
   </div>
+  <!-- end filters for artists -->
+
   <div class="col s8">
     <div ng-repeat="artist in artists | filter:search | filter:genreFilter | filter:signedFilter | filter:touringFilter | filter:bookedFilter | filter:reviewsFilter | filter:dateFilter | filter:distanceFilter">
       <div class="card col s10 offset-s1">
         <div class="card-image waves-effect waves-block waves-light col s3">
-          <img class="activator profPic" src="http://i.imgur.com/ZNc1JZq.jpg">
+          <img class="activator profPic" ng-src="{{artist.profile_pic || 'http://i.imgur.com/ZNc1JZq.jpg'}}">
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">{{artist.artist_name}}<i class="material-icons right">more_vert</i></span>
