@@ -21,12 +21,9 @@ module.exports = {
   'callbackURL': process.env.GOOGLE_CALLBACK_URL 
   },
  'AWS': {
-  'accessKey': process.env.AWS_ACCESS_KEY,
-  'secretKey': process.env.AWS_SECRET_KEY,
-  'bucket': process.env.S3_BUCKET
+  'accessKey': process.env.AWS_ACCESS_KEY_ID,
+  'secretKey': process.env.AWS_SECRET_ACCESS_KEY,
+  'bucket': process.env.S3_BUCKET_NAME
  }
 }
 
-// if (process.env.NODE_ENV === 'production') {
-//   exports.pgData.connection = process.env.DATABASE_URL
-// }
