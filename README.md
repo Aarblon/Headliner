@@ -65,8 +65,8 @@ See Headliner in action by visiting:
 
 ### Schema
 ***
-
-[Schema](http://i.imgur.com/0VUbhib.png)
+Database Schema: 
+![Schema](http://i.imgur.com/0VUbhib.png)
 
 
 ### Stack
