@@ -2,7 +2,7 @@
 ***
 **HEADLINER** is a way for **artists** and **venues** to easily connect and find each other online. 
 
--![headliner](https://s3-us-west-2.amazonaws.com/headliner/Screen+Shot+2015-10-16+at+12.08.42+PM.png)
+![Headliner](http://i.imgur.com/Lp06PMO.png)
 
 
 Headliner makes it easy for both parties to get the information they're looking for when they want to book their next show. 
@@ -30,7 +30,6 @@ See Headliner in action by visiting:
 ***
 - individualized user profiles
 - ability to search all users with filters 
-- custom audio player 
 - media uploading capability
 - messaging system
 - user ratings 
@@ -64,9 +63,15 @@ See Headliner in action by visiting:
 ## Build Overview
 ***
 
+### Schema
+***
+Database Schema: 
+![Schema](http://i.imgur.com/0VUbhib.png)
+
+
 ### Stack
 ***
-- Postgres
+- PostgreSQL
 - Angular
 - Node
 - Express
