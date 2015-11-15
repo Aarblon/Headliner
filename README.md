@@ -30,7 +30,6 @@ See Headliner in action by visiting:
 ***
 - individualized user profiles
 - ability to search all users with filters 
-- custom audio player 
 - media uploading capability
 - messaging system
 - user ratings 
@@ -64,9 +63,15 @@ See Headliner in action by visiting:
 ## Build Overview
 ***
 
+### Schema
+***
+
+[Schema](http://i.imgur.com/0VUbhib.png)
+
+
 ### Stack
 ***
-- Postgres
+- PostgreSQL
 - Angular
 - Node
 - Express
